@@ -26,7 +26,22 @@ class FormPageLocators:
     FLOR = (By.XPATH, "//input[@placeholder='№ Поверху']")
 
     # Способ оплаты
-    CHOOSE_PAYMENT = (By.XPATH, "//label[@for = 'payment-type-000000001']")
+    CHOOSE_PAYMENT_CASH = (By.XPATH, "//label[@for = 'payment-type-000000001']")
+    CHOOSE_PAYMENT_GOOGLEPAY = (By.XPATH, "//label[@for = 'payment-type-000000492']")
+    CHOOSE_PAYMENT_ANY_CARDS = (By.XPATH, "//label[@for = 'payment-type-000000493']")
+    CHOOSE_PAYMENT_PART = (By.XPATH, "//label[@for='payment-type-credit']")
+
+    # Виды оплат частями
+    CHOOSE_PART_SUPER = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'СУПЕР РОЗСТРОЧКА!')]")
+    CHOOSE_PART_PRIVAT = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'ПриватБанк')]")
+    CHOOSE_PART_MONO = (By.XPATH, "//div[@class='bank bank__label'][normalize-space()='Monobank']")
+    CHOOSE_PART_SUPER_OSCHAD = (By.XPATH, "//div[contains(text(),'«Оплата частинами» від ОщадБанк')]")
+    CHOOSE_PART_ABANK = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'А банк')]")
+    CHOOSE_PART_PUMB = (By.XPATH, "//div[contains(text(),'Пумб')]")
+    CHOOSE_PART_GLOBUS = (By.XPATH, "//div[contains(text(),'Плати частинами GlobusPlus (Глобус Банк)')]")
+    CHOOSE_PART_OTP = (By.XPATH, "//div[contains(text(),'Плати частинами 'Скибочка' від ОТР Банк')]")
+    CHOOSE_PART_SPORT = (By.XPATH, "//div[contains(text(),'Sportbank')]")
+    CHOOSE_PART_SENSE = (By.XPATH, "//div[@class='bank bank__label'][normalize-space()='Sense Bank']")
 
     # Контактные данные
     PHONE = (By.XPATH, "//input[@name = 'phone']")
@@ -39,8 +54,5 @@ class FormPageLocators:
     # Создание заказа
     CHECKOUT = (By.XPATH, "//button[@type = 'submit']")
 
-
-
-
-
-    # PA = (By.CSS_SELECTOR, "[class='ui-library-action-80bf ui-library-actionLink-ec77 ui-library-buttonRadiusDefault-be7f #e1e6ee BottomHeaderLinestyled__IconContainerDiv-sc-i5edj7-7 fKVLpI']")
+    # Страница благодарности
+    THP = (By.XPATH, '//*[@id="page-footer-content-id"]/div/div/div/div[1]/div[1]')
