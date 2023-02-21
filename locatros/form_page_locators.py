@@ -33,15 +33,17 @@ class FormPageLocators:
 
     # Виды оплат частями
     CHOOSE_PART_SUPER = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'СУПЕР РОЗСТРОЧКА!')]")
+    INPN = (By.XPATH, "//input[@placeholder='Введіть Ваш ІПН']")
     CHOOSE_PART_PRIVAT = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'ПриватБанк')]")
     CHOOSE_PART_MONO = (By.XPATH, "//div[@class='bank bank__label'][normalize-space()='Monobank']")
-    CHOOSE_PART_SUPER_OSCHAD = (By.XPATH, "//div[contains(text(),'«Оплата частинами» від ОщадБанк')]")
+    CHOOSE_PART_OSCHAD = (By.XPATH, "//div[contains(text(),'«Оплата частинами» від ОщадБанк')]")
     CHOOSE_PART_ABANK = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'А банк')]")
     CHOOSE_PART_PUMB = (By.XPATH, "//div[contains(text(),'Пумб')]")
     CHOOSE_PART_GLOBUS = (By.XPATH, "//div[contains(text(),'Плати частинами GlobusPlus (Глобус Банк)')]")
-    CHOOSE_PART_OTP = (By.XPATH, "//div[contains(text(),'Плати частинами 'Скибочка' від ОТР Банк')]")
+    CHOOSE_PART_OTP = (By.XPATH, "//div[contains(text(),'Плати частинами \"Скибочка\" від ОТР Банк')]")
     CHOOSE_PART_SPORT = (By.XPATH, "//div[contains(text(),'Sportbank')]")
     CHOOSE_PART_SENSE = (By.XPATH, "//div[@class='bank bank__label'][normalize-space()='Sense Bank']")
+    NUM_CARD = (By.XPATH, "//input[@placeholder='Останні 4 цифри платіжної картки']")
 
     # Контактные данные
     PHONE = (By.XPATH, "//input[@name = 'phone']")
