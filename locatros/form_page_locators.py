@@ -27,13 +27,14 @@ class FormPageLocators:
 
     # Способ оплаты
     CHOOSE_PAYMENT_CASH = (By.XPATH, "//label[@for = 'payment-type-000000001']")
+    CHOOSE_PAYMENT_PRIVA24 = (By.XPATH, "//label[@for='payment-type-000000490']")
     CHOOSE_PAYMENT_GOOGLEPAY = (By.XPATH, "//label[@for = 'payment-type-000000492']")
     CHOOSE_PAYMENT_ANY_CARDS = (By.XPATH, "//label[@for = 'payment-type-000000493']")
     CHOOSE_PAYMENT_PART = (By.XPATH, "//label[@for='payment-type-credit']")
 
     # Виды оплат частями
     CHOOSE_PART_SUPER = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'СУПЕР РОЗСТРОЧКА!')]")
-    INPN = (By.XPATH, "//input[@placeholder='Введіть Ваш ІПН']")
+    IPN = (By.XPATH, "//input[@placeholder='Введіть Ваш ІПН']")
     CHOOSE_PART_PRIVAT = (By.XPATH, "//div[@class='bank bank__label'][contains(text(),'ПриватБанк')]")
     CHOOSE_PART_MONO = (By.XPATH, "//div[@class='bank bank__label'][normalize-space()='Monobank']")
     CHOOSE_PART_OSCHAD = (By.XPATH, "//div[contains(text(),'«Оплата частинами» від ОщадБанк')]")
@@ -63,6 +64,7 @@ class FormPageLocators:
     IPAY = (By.XPATH, "//div[@id='partner']")
     MONOPAY = (By.XPATH, "//img[@alt='monobank-logo']")
     GLOBUSPAY = (By.XPATH, "//img[@alt='globus-logo']")
+    PRIVAT24PAY = (By.XPATH, "//div[@class='container']")
 
     #Пуши
     ALERT = (By.XPATH, "//div[@role='alert']")
