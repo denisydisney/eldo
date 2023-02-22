@@ -1,5 +1,6 @@
 from pages.order_page import FromPage
 import pyautogui
+from locatros.form_page_locators import FormPageLocators as Locators
 
 
 class TestFormPage:
@@ -28,9 +29,14 @@ class TestFormPage:
         pyautogui.scroll(-20)
         order_page.pick_up_part_super()
 
-    def test_pick_up_part_mono(self, driver):
+    def test_pick_up_part_privat(self, driver):
         order_page = FromPage(driver, 'https://eldorado.ua/uk/')
         order_page.open()
+        pyautogui.scroll(-20)
+        order_page.pick_up_part_privat()
+
+    def test_pick_up_part_mono(self, driver):
+        order_page = FromPage(driver, 'https://eldorado.ua/uk/')
         pyautogui.scroll(-20)
         order_page.pick_up_part_mono()
 

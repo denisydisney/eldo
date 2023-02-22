@@ -50,11 +50,19 @@ class FormPageLocators:
     FIRST_NAME = (By.XPATH, "//input[@name = 'name']")
     SECOND_NAME = (By.XPATH, "//input[@name = 'surname']")
     THIRD_NAME = (By.XPATH, "//input[@name = 'patronymic']")
+    EMAIL = (By.XPATH, "//input[@placeholder='Напишіть ваш Email']")
     COMMENTS = (By.XPATH, "//textarea[@name = 'comment']")
     DONT_CALL = (By.XPATH, "//label[@for = 'called-for-client']")
 
     # Создание заказа
     CHECKOUT = (By.XPATH, "//button[@type = 'submit']")
+    CHECKOUT_GOOGLEPAY = (By.XPATH, "//div[contains(@class,'gpay-card-info-placeholder-container')]")
 
     # Страница благодарности
     THP = (By.XPATH, '//*[@id="page-footer-content-id"]/div/div/div/div[1]/div[1]')
+    IPAY = (By.XPATH, "//div[@id='partner']")
+    MONOPAY = (By.XPATH, "//img[@alt='monobank-logo']")
+    GLOBUSPAY = (By.XPATH, "//img[@alt='globus-logo']")
+
+    #Пуши
+    ALERT = (By.XPATH, "//div[@role='alert']")

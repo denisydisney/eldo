@@ -20,7 +20,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.FIRST_NAME).send_keys(first_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_googlepay(self):
@@ -42,7 +47,11 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        googlepay = self.element_is_visible(Locators.CHECKOUT_GOOGLEPAY)
+        if googlepay == googlepay:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_anycards(self):
@@ -64,7 +73,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        ipay = self.element_is_visible(Locators.IPAY)
+        if ipay == ipay:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_super(self):
@@ -89,17 +103,51 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
-    def pick_up_part_mono(self):
-        phone = '666666666'
-        first_name = 'Denys'
-        second_name = 'Budkov'
-        third_name = 'Vasylevych'
+    def pick_up_part_privat(self):
+        phone = '637340443'
+        first_name = 'Oleh'
+        second_name = 'Khondych'
+        third_name = 'Viktorovich'
         comments = 'Test QA'
 
         self.element_is_visible(Locators.PRODUCT_CARD).click()
+        self.element_is_visible(Locators.BUY_ON_STORE_BUTTON).click()
+        self.element_is_visible(Locators.CART).click()
+        self.element_is_visible(Locators.CHOOSE_PICK_UP_FROM_STORE).click()
+        self.element_is_visible(Locators.CHOOSE_STORE_PICK_UP).click()
+        self.element_is_visible(Locators.CHOOSE_PAYMENT_PART).click()
+        self.element_is_visible(Locators.CHOOSE_PART_PRIVAT).click()
+        self.element_is_visible(Locators.PHONE).send_keys(phone)
+        self.element_is_visible(Locators.FIRST_NAME).send_keys(first_name)
+        self.element_is_visible(Locators.SECOND_NAME).send_keys(second_name)
+        self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
+        self.element_is_visible(Locators.COMMENTS).send_keys(comments)
+        self.element_is_visible(Locators.DONT_CALL).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
+        time.sleep(5)
+
+    def pick_up_part_mono(self):
+        phone = '994803905'
+        first_name = 'Oleksii'
+        second_name = 'Smeshkov'
+        third_name = 'Jude'
+        email = 'oleksii.smeshkov@eldorado.ua'
+        comments = 'Test QA'
+
+        # self.element_is_visible(Locators.PRODUCT_CARD).click()
         self.element_is_visible(Locators.BUY_ON_STORE_BUTTON).click()
         self.element_is_visible(Locators.CART).click()
         self.element_is_visible(Locators.CHOOSE_PICK_UP_FROM_STORE).click()
@@ -110,9 +158,15 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.FIRST_NAME).send_keys(first_name)
         self.element_is_visible(Locators.SECOND_NAME).send_keys(second_name)
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
+        self.element_is_visible(Locators.EMAIL).send_keys(email)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        monopay = self.element_is_visible(Locators.MONOPAY)
+        if monopay == monopay:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_oschad(self):
@@ -135,7 +189,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_abank(self):
@@ -158,7 +217,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        alert = self.element_is_visible(Locators.ALERT)
+        if alert != alert:
+            print('PASS')
+        else:
+            print('FAILL')
         time.sleep(5)
 
     def pick_up_part_punb(self):
@@ -181,7 +245,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_globus(self):
@@ -204,7 +273,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        globuspay = self.element_is_visible(Locators.THP)
+        if globuspay != globuspay:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_otp(self):
@@ -227,7 +301,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
+            print("PASS")
+        else:
+            print("FAILL")
         time.sleep(5)
 
     def pick_up_part_sport(self):
@@ -250,7 +329,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        alert = self.element_is_visible(Locators.ALERT)
+        if alert != alert:
+            print('PASS')
+        else:
+            print('FAILL')
         time.sleep(5)
 
     def pick_up_part_sense(self):
@@ -275,30 +359,12 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
         self.element_is_visible(Locators.COMMENTS).send_keys(comments)
         self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
-        time.sleep(5)
-
-    def pick_up_part_privat(self):
-        phone = '666666666'
-        first_name = 'Denys'
-        second_name = 'Budkov'
-        third_name = 'Vasylevych'
-        comments = 'Test QA'
-
-        self.element_is_visible(Locators.PRODUCT_CARD).click()
-        self.element_is_visible(Locators.BUY_ON_STORE_BUTTON).click()
-        self.element_is_visible(Locators.CART).click()
-        self.element_is_visible(Locators.CHOOSE_PICK_UP_FROM_STORE).click()
-        self.element_is_visible(Locators.CHOOSE_STORE_PICK_UP).click()
-        self.element_is_visible(Locators.CHOOSE_PAYMENT_PART).click()
-        self.element_is_visible(Locators.CHOOSE_PART_PRIVAT).click()
-        self.element_is_visible(Locators.PHONE).send_keys(phone)
-        self.element_is_visible(Locators.FIRST_NAME).send_keys(first_name)
-        self.element_is_visible(Locators.SECOND_NAME).send_keys(second_name)
-        self.element_is_visible(Locators.THIRD_NAME).send_keys(third_name)
-        self.element_is_visible(Locators.COMMENTS).send_keys(comments)
-        self.element_is_visible(Locators.DONT_CALL).click()
-        # self.element_is_visible(Locators.CHECKOUT).click()
+        self.element_is_visible(Locators.CHECKOUT).click()
+        alert = self.element_is_visible(Locators.ALERT)
+        if alert != alert:
+            print('PASS')
+        else:
+            print('FAILL')
         time.sleep(5)
 
     def do_targeted_delivery(self):
