@@ -226,7 +226,7 @@ class TestFormPage:
         order_page = FromPage(driver, 'https://eldorado.ua/uk/')
         order_page.open()
         pyautogui.scroll(-20)
-        order_page.new_post_part_pumb()
+        order_page.new_post_part_punb()
 
     def test_new_post_part_globus(self, driver):
         order_page = FromPage(driver, 'https://eldorado.ua/uk/')
