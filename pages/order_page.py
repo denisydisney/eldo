@@ -23,9 +23,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_googlepay(self):
@@ -49,9 +49,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.DONT_CALL).click()
         googlepay = self.element_is_visible(Locators.CHECKOUT_GOOGLEPAY)
         if googlepay == googlepay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_anycards(self):
@@ -76,9 +76,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         ipay = self.element_is_visible(Locators.IPAY)
         if ipay == ipay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_super(self):
@@ -106,9 +106,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_privat(self):
@@ -134,9 +134,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_mono(self):
@@ -164,9 +164,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         monopay = self.element_is_visible(Locators.MONOPAY)
         if monopay == monopay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_oschad(self):
@@ -192,9 +192,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_abank(self):
@@ -222,7 +222,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_punb(self):
@@ -248,9 +248,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_globus(self):
@@ -276,9 +276,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         globuspay = self.element_is_visible(Locators.THP)
         if globuspay != globuspay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_otp(self):
@@ -304,9 +304,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_sport(self):
@@ -334,7 +334,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def pick_up_part_sense(self):
@@ -364,7 +364,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     ####################################################################################################################
@@ -397,9 +397,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_privar24(self):
@@ -431,9 +431,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         privat24pay = self.element_is_visible(Locators.PRIVAT24PAY)
         if privat24pay == privat24pay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_googlepay(self):
@@ -464,9 +464,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.DONT_CALL).click()
         googlepay = self.element_is_visible(Locators.CHECKOUT_GOOGLEPAY)
         if googlepay == googlepay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_anycard(self):
@@ -498,9 +498,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         ipay = self.element_is_visible(Locators.IPAY)
         if ipay == ipay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_super(self):
@@ -535,9 +535,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_privat(self):
@@ -570,9 +570,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_mono(self):
@@ -609,7 +609,7 @@ class FromPage(BasePage):
         if monopay == monopay:
             print("PASS")
         else:
-            print("FAILL")
+            print("FAIL")
         time.sleep(5)
 
     def targeted_part_oschad(self):
@@ -642,9 +642,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_abank(self):
@@ -679,7 +679,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_pumb(self):
@@ -712,9 +712,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_globus(self):
@@ -747,9 +747,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         globuspay = self.element_is_visible(Locators.THP)
         if globuspay != globuspay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_otp(self):
@@ -782,9 +782,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_sport(self):
@@ -819,7 +819,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def targeted_part_sense(self):
@@ -856,7 +856,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     ####################################################################################################################
@@ -882,9 +882,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_privat24(self):
@@ -909,9 +909,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         privat24pay = self.element_is_visible(Locators.PRIVAT24PAY)
         if privat24pay == privat24pay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_googlepay(self):
@@ -935,9 +935,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.DONT_CALL).click()
         googlepay = self.element_is_visible(Locators.CHECKOUT_GOOGLEPAY)
         if googlepay == googlepay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_anycards(self):
@@ -962,9 +962,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         ipay = self.element_is_visible(Locators.IPAY)
         if ipay == ipay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_super(self):
@@ -992,9 +992,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_privat(self):
@@ -1020,9 +1020,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_mono(self):
@@ -1050,9 +1050,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         monopay = self.element_is_visible(Locators.MONOPAY)
         if monopay == monopay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_oschad(self):
@@ -1078,9 +1078,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_abank(self):
@@ -1108,7 +1108,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_punb(self):
@@ -1134,9 +1134,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_globus(self):
@@ -1162,9 +1162,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         globuspay = self.element_is_visible(Locators.THP)
         if globuspay != globuspay:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_otp(self):
@@ -1190,9 +1190,9 @@ class FromPage(BasePage):
         self.element_is_visible(Locators.CHECKOUT).click()
         thp = self.element_is_visible(Locators.THP)
         if thp == thp:
-            print("PASS")
+            print('PASS')
         else:
-            print("FAILL")
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_sport(self):
@@ -1220,7 +1220,7 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
         time.sleep(5)
 
     def new_post_part_sense(self):
@@ -1250,5 +1250,56 @@ class FromPage(BasePage):
         if alert != alert:
             print('PASS')
         else:
-            print('FAILL')
+            print('FAIL')
+        time.sleep(5)
+
+
+class Auth(BasePage):
+    def log_in_valid(self):
+        phone = '636183928'
+        pasword = 'RA92V7r6pLDarAAA9hxjsA=='
+
+        self.element_is_visible(Locators.PC_BATTON).click()
+        self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        self.element_is_visible(Locators.PASWORD_AUTH).send_keys(pasword)
+        self.element_is_visible(Locators.SHOW_PASWORD).click()
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        time.sleep(5)
+        self.element_is_visible(Locators.PC_BATTON).click()
+        pc_page = self.element_is_visible(Locators.PC_PAGE)
+        if pc_page == pc_page:
+            print('PASS')
+        else:
+            print('FAIL')
+        time.sleep(5)
+
+    def log_in_invalid_number(self):
+        phone = '666666666'
+
+        self.element_is_visible(Locators.PC_BATTON).click()
+        self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        re_captcha = self.element_is_visible(Locators.RE_CAPTCHA).click()
+        if re_captcha == re_captcha:
+            print('PASS')
+        else:
+            print('FAIL')
+        time.sleep(5)
+
+    def log_in_invalid_pasword(self):
+        phone = '636183928'
+        pasword = '666666666'
+
+        self.element_is_visible(Locators.PC_BATTON).click()
+        self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        self.element_is_visible(Locators.PASWORD_AUTH).send_keys(pasword)
+        self.element_is_visible(Locators.SHOW_PASWORD).click()
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        error_text = self.element_is_visible(Locators.ERROR_TEXT)
+        if error_text == error_text:
+            print('PASS')
+        else:
+            print('FAIL')
         time.sleep(5)

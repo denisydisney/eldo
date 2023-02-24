@@ -1,6 +1,5 @@
 from pages.order_page import FromPage
 import pyautogui
-from locatros.form_page_locators import FormPageLocators as Locators
 
 
 class TestFormPage:

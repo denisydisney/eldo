@@ -66,5 +66,15 @@ class FormPageLocators:
     GLOBUSPAY = (By.XPATH, "//img[@alt='globus-logo']")
     PRIVAT24PAY = (By.XPATH, "//div[@class='container']")
 
-    #Пуши
+    # Пуши
     ALERT = (By.XPATH, "//div[@role='alert']")
+
+    # Регистрация
+    PC_BATTON = (By.XPATH, "//div[contains(text(),'Кабінет')]")
+    PHONE_AUTH = (By.XPATH, "//input[@placeholder='380']")
+    SUBMIT_BUTTON = (By.XPATH, "//button[@type='submit']")
+    PASWORD_AUTH = (By.XPATH, "//input[@placeholder='Введіть пароль для входу']")
+    SHOW_PASWORD = (By.XPATH, "//label[@for='showPassword']")
+    PC_PAGE = (By.XPATH, "//div[@class='contacts-container bottom-tier']")
+    ERROR_TEXT = (By.XPATH, "//span[@class='new-not-require-input-error-text']")
+    RE_CAPTCHA = (By.XPATH, "//div[@class='authText']")
