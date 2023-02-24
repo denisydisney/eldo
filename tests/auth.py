@@ -17,3 +17,8 @@ class TestAuth:
         order_page = Auth(driver, 'https://eldorado.ua/uk/')
         order_page.open()
         order_page.log_in_invalid_pasword()
+
+    def test_sign_up_valid(self, driver):
+        order_page = Auth(driver, 'https://eldorado.ua/uk/')
+        order_page.open()
+        order_page.sign_up_valid()

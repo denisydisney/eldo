@@ -69,7 +69,7 @@ class FormPageLocators:
     # Пуши
     ALERT = (By.XPATH, "//div[@role='alert']")
 
-    # Регистрация
+    # Авторизация
     PC_BATTON = (By.XPATH, "//div[contains(text(),'Кабінет')]")
     PHONE_AUTH = (By.XPATH, "//input[@placeholder='380']")
     SUBMIT_BUTTON = (By.XPATH, "//button[@type='submit']")
@@ -77,4 +77,8 @@ class FormPageLocators:
     SHOW_PASWORD = (By.XPATH, "//label[@for='showPassword']")
     PC_PAGE = (By.XPATH, "//div[@class='contacts-container bottom-tier']")
     ERROR_TEXT = (By.XPATH, "//span[@class='new-not-require-input-error-text']")
-    RE_CAPTCHA = (By.XPATH, "//div[@class='authText']")
+    RE_CAPTCHA = (By.XPATH, "//div[@class='recaptcha-checkbox-border']")
+
+    # Регистрация
+    LAST_NAME = (By.XPATH, "//input[@name='last_name']")
+    REG_EMAIL = (By.XPATH, "//input[@name='email']")

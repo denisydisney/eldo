@@ -1303,3 +1303,21 @@ class Auth(BasePage):
         else:
             print('FAIL')
         time.sleep(5)
+
+    def sign_up_valid(self):
+        phone = '637340443'
+        pasword = '666666666'
+        first_name = 'John'
+        second_name = 'Doe'
+        email = str(time.time()) + "@icloud.com"
+
+        self.element_is_visible(Locators.PC_BATTON).click()
+        self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
+        time.sleep(7)
+        self.element_is_visible(Locators.RE_CAPTCHA).click()
+
+        self.element_is_visible(Locators.FIRST_NAME).send_keya(first_name)
+        self.element_is_visible(Locators.LAST_NAME).send_keya(second_name)
+        self.element_is_visible(Locators.REG_EMAIL).send_keya(email)
+        self.element_is_visible(Locators.SUBMIT_BUTTON).click()
