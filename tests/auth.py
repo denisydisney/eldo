@@ -1,24 +1,24 @@
-from pages.order_page import Auth
+from pages.auth_page import Auth
 
 
 class TestAuth:
 
     def test_log_in_valid(self, driver):
-        order_page = Auth(driver, 'https://eldorado.ua/uk/')
-        order_page.open()
-        order_page.log_in_valid()
+        auth_page = Auth(driver, 'https://eldorado.ua/uk/')
+        auth_page.open()
+        auth_page.log_in_valid()
 
     def test_log_in_invalid_number(self, driver):
-        order_page = Auth(driver, 'https://eldorado.ua/uk/')
-        order_page.open()
-        order_page.log_in_invalid_number()
+        auth_page = Auth(driver, 'https://eldorado.ua/uk/')
+        auth_page.open()
+        auth_page.log_in_invalid_number()
 
     def test_log_in_invalid_pasword(self, driver):
-        order_page = Auth(driver, 'https://eldorado.ua/uk/')
-        order_page.open()
-        order_page.log_in_invalid_pasword()
+        auth_page = Auth(driver, 'https://eldorado.ua/uk/')
+        auth_page.open()
+        auth_page.log_in_invalid_pasword()
 
     def test_sign_up_valid(self, driver):
-        order_page = Auth(driver, 'https://eldorado.ua/uk/')
-        order_page.open()
-        order_page.sign_up_valid()
+        auth_page = Auth(driver, 'https://eldorado.ua/uk/')
+        auth_page.open()
+        auth_page.sign_up_valid()

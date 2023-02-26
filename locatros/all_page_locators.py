@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class FormPageLocators:
+class AllPageLocators:
     # Карточка товара
     PRODUCT_CARD = (By.XPATH, "//span[contains(text(),'Пральна машина ELENBERG FS 5100 W')]")
     BUY_ON_STORE_BUTTON = (By.XPATH, "//*[.='Купити у кредит']")
@@ -77,8 +77,16 @@ class FormPageLocators:
     SHOW_PASWORD = (By.XPATH, "//label[@for='showPassword']")
     PC_PAGE = (By.XPATH, "//div[@class='contacts-container bottom-tier']")
     ERROR_TEXT = (By.XPATH, "//span[@class='new-not-require-input-error-text']")
-    RE_CAPTCHA = (By.XPATH, "//div[@class='recaptcha-checkbox-border']")
+    RECAPTCHA = (By.XPATH, "//iframe[@title='reCAPTCHA']")
 
     # Регистрация
-    LAST_NAME = (By.XPATH, "//input[@name='last_name']")
-    REG_EMAIL = (By.XPATH, "//input[@name='email']")
+    REG_FIRST_NAME = (By.XPATH, "//span[contains(text(),'Ім')]")
+    REG_LAST_NAME = (By.XPATH, "//span[contains(text(),'Прізвище')]")
+    REG_EMAIL = (By.XPATH, "//span[contains(text(),'Пошта')]")
+
+    # Поиск
+    INPUT_SEARCH = (By.XPATH, "//input[@type='search']")
+    SEARCH_PEGE_TITLE = (By.CSS_SELECTOR, ".ui-library-heading4-c1b7")
+    POP_GOODS = (By.XPATH, "//h6[contains(text(),'Популярні товари')]")
+    PERHAPS_YOU_FINDING = (By.XPATH, "//h6[contains(text(),'Можливо ви шукали')]")
+    SHOW_ALL = (By.XPATH, "//a[contains(text(),'Показати всі товари')]")

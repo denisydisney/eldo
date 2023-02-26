@@ -1,10 +1,9 @@
 import time
-
 from pages.base_page import BasePage
-from locatros.form_page_locators import FormPageLocators as Locators
+from locatros.all_page_locators import AllPageLocators as Locators
 
 
-class FromPage(BasePage):
+class OrderPage(BasePage):
     def pick_up_cash(self):
         phone = '666666666'
         first_name = 'Denys'
@@ -143,7 +142,7 @@ class FromPage(BasePage):
         phone = '994803905'
         first_name = 'Oleksii'
         second_name = 'Smeshkov'
-        third_name = 'Jude'
+        third_name = 'Phantomovych'
         email = 'oleksii.smeshkov@eldorado.ua'
         comments = 'Test QA'
 
@@ -1280,7 +1279,7 @@ class Auth(BasePage):
         self.element_is_visible(Locators.PC_BATTON).click()
         self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
         self.element_is_visible(Locators.SUBMIT_BUTTON).click()
-        re_captcha = self.element_is_visible(Locators.RE_CAPTCHA).click()
+        re_captcha = self.element_is_visible(Locators.RECAPTCHA).click()
         if re_captcha == re_captcha:
             print('PASS')
         else:
@@ -1315,8 +1314,7 @@ class Auth(BasePage):
         self.element_is_visible(Locators.PHONE_AUTH).send_keys(phone)
         self.element_is_visible(Locators.SUBMIT_BUTTON).click()
         time.sleep(7)
-        self.element_is_visible(Locators.RE_CAPTCHA).click()
-
+        self.element_is_visible(Locators.RECAPTCHA).click()
         self.element_is_visible(Locators.FIRST_NAME).send_keya(first_name)
         self.element_is_visible(Locators.LAST_NAME).send_keya(second_name)
         self.element_is_visible(Locators.REG_EMAIL).send_keya(email)
