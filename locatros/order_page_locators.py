@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
-from locatros.variables import AllVariablesLocators as AVL
 
 
-class AllPageLocators:
+class OrderPageLocators:
     # Карточка товара
     PRODUCT_CARD = (By.XPATH, "//span[contains(text(),'Пральна машина ELENBERG FS 5100 W')]")
     BUY_ON_STORE_BUTTON = (By.XPATH, "//*[.='Купити у кредит']")
@@ -69,26 +68,3 @@ class AllPageLocators:
 
     # Пуши
     ALERT = (By.XPATH, "//div[@role='alert']")
-
-    # Авторизация
-    PC_BATTON = (By.XPATH, "//div[contains(text(),'Кабінет')]")
-    PHONE_AUTH = (By.XPATH, "//input[@placeholder='380']")
-    SUBMIT_BUTTON = (By.XPATH, "//button[@type='submit']")
-    PASWORD_AUTH = (By.XPATH, "//input[@placeholder='Введіть пароль для входу']")
-    SHOW_PASWORD = (By.XPATH, "//label[@for='showPassword']")
-    PC_PAGE = (By.XPATH, "//div[@class='contacts-container bottom-tier']")
-    ERROR_TEXT = (By.XPATH, "//span[@class='new-not-require-input-error-text']")
-    RECAPTCHA = (By.XPATH, "//iframe[@title='reCAPTCHA']")
-
-    # Регистрация
-    REG_FIRST_NAME = (By.XPATH, "//span[contains(text(),'Ім')]")
-    REG_LAST_NAME = (By.XPATH, "//span[contains(text(),'Прізвище')]")
-    REG_EMAIL = (By.XPATH, "//span[contains(text(),'Пошта')]")
-
-    # Поиск
-    INPUT_SEARCH = (By.XPATH, "//input[@type='search']")
-    SEARCH_PEGE_TITLE = (By.XPATH, "//h5[@class='ui-library-heading4-c1b7']")
-    POP_GOODS = (By.XPATH, "//h6[contains(text(),'Популярні товари')]")
-    PERHAPS_YOU_FINDING = (By.XPATH, "//h6[contains(text(),'Можливо ви шукали')]")
-    SHOW_ALL = (By.XPATH, "//a[contains(text(),'Показати всі товари')]")
-    CHOOSE_GOODS = (By.XPATH, f"//div[@color='black'][contains(text(),'За запитом  ')]")
