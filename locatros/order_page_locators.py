@@ -56,15 +56,15 @@ class OrderPageLocators:
     DONT_CALL = (By.XPATH, "//label[@for = 'called-for-client']")
 
     # Создание заказа
-    CHECKOUT = (By.XPATH, "//button[@type = 'submit']")
+    CHECKOUT = (By.XPATH, "//span[contains(text(),'ЗАМОВИТИ')]")
     CHECKOUT_GOOGLEPAY = (By.XPATH, "//div[contains(@class,'gpay-card-info-placeholder-container')]")
 
     # Страница благодарности
-    THP = (By.XPATH, '//*[@id="page-footer-content-id"]/div/div/div/div[1]/div[1]')
-    IPAY = (By.XPATH, "//div[@id='partner']")
+    THP = (By.XPATH, "//div[@class='thank-you-header-item-center']")
+    IPAY = (By.XPATH, "//span[contains(text(),'CVV код:')]")
     MONOPAY = (By.XPATH, "//img[@alt='monobank-logo']")
     GLOBUSPAY = (By.XPATH, "//img[@alt='globus-logo']")
-    PRIVAT24PAY = (By.XPATH, "//div[@class='container']")
+    PRIVAT24PAY = (By.XPATH, "//*[name()='path' and contains(@d,'M20.67 29.')]")
 
     # Пуши
     ALERT = (By.XPATH, "//div[@role='alert']")

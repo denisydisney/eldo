@@ -125,10 +125,10 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.CHOOSE_PAYMENT_PART).click()
         self.element_is_visible(Locators.CHOOSE_PART_MONO).click()
         self.element_is_visible(Locators.PHONE).send_keys(OVL.s_phone)
-        self.element_is_visible(Locators.FIRST_NAME).send_keys(OVL.s_first_name)
-        self.element_is_visible(Locators.SECOND_NAME).send_keys(OVL.s_second_name)
-        self.element_is_visible(Locators.THIRD_NAME).send_keys(OVL.s_third_name)
-        self.element_is_visible(Locators.EMAIL).send_keys(OVL.s_email)
+        self.element_is_visible(Locators.FIRST_NAME).send_keys(OVL.first_name)
+        self.element_is_visible(Locators.SECOND_NAME).send_keys(OVL.second_name)
+        self.element_is_visible(Locators.THIRD_NAME).send_keys(OVL.third_name)
+        self.element_is_visible(Locators.EMAIL).send_keys(OVL.email)
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
@@ -294,8 +294,8 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
-        alert = self.element_is_visible(Locators.ALERT)
-        if alert != alert:
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
             print('PASS')
         else:
             print('FAIL')
@@ -630,8 +630,8 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
-        alert = self.element_is_visible(Locators.ALERT)
-        if alert != alert:
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
             print('PASS')
         else:
             print('FAIL')
@@ -657,8 +657,8 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
-        alert = self.element_is_visible(Locators.ALERT)
-        if alert != alert:
+        thp = self.element_is_visible(Locators.ALERT)
+        if thp == thp:
             print('PASS')
         else:
             print('FAIL')
@@ -954,8 +954,8 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
-        alert = self.element_is_visible(Locators.ALERT)
-        if alert != alert:
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
             print('PASS')
         else:
             print('FAIL')
@@ -978,8 +978,8 @@ class OrderPage(BasePage):
         self.element_is_visible(Locators.COMMENTS).send_keys(OVL.comments)
         self.element_is_visible(Locators.DONT_CALL).click()
         self.element_is_visible(Locators.CHECKOUT).click()
-        alert = self.element_is_visible(Locators.ALERT)
-        if alert != alert:
+        thp = self.element_is_visible(Locators.THP)
+        if thp == thp:
             print('PASS')
         else:
             print('FAIL')
