@@ -12,3 +12,6 @@ class SearchPageLocators:
     PRODUCT_CARD =(By.XPATH, "//div[@class='TileBlockstyled__StyledTileBlockHeader-sc-ogrpyx-10 jLAppr']")
     GOODS_CODE = (By.XPATH, "//div[@class='goods-code']")
     MAYBE_LOOCK = (By.XPATH, "//ul[@class='search-recomendations']//li")
+    CATEGORY = (By.XPATH, "//ul[@class='categories-list']//li")
+    CATEGORY_TITLE = (By.XPATH, "//h1[contains(@class, 'ui-library-heading4-c1b7')]")
+    KRAKOZYABRA_TITLE = (By.XPATH, "//span[contains(@class, 'ui-library-heading4-c1b7')]")

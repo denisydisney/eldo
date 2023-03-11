@@ -25,3 +25,15 @@ class TestSearch:
         search_page.open()
         search_page.search_maybe_loock()
         search_page.search_page_check_1()
+
+    def test_search_in_category(self, driver):
+        search_page = Search(driver, 'https://eldorado.ua/uk/')
+        search_page.open()
+        search_page.search_in_category()
+        search_page.search_page_check_2()
+
+    def test_search_krakozyabra(self, driver):
+        search_page = Search(driver, 'https://eldorado.ua/uk/')
+        search_page.open()
+        search_page.search_krakozyabra()
+        search_page.search_page_check3()

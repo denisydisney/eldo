@@ -65,6 +65,44 @@ class Search(BasePage):
         if second_word == maybe_loock_word.upper():
             print(f'PASS')
             print(f'Слово поиска {maybe_loock_word}')
-            print(f'Слово тайтла {maybe_loock_word}')
+            print(f'Слово тайтла {second_word}')
         else:
             print('FAIL')
+
+    def search_in_category(self):
+        self.element_is_visible(Locators.INPUT_SEARCH).send_keys(SVL.product_name)
+        category = self.element_is_visible(Locators.CATEGORY)
+        full_text = category.text
+        words = full_text.split()
+        category = words[0]
+        self.element_is_visible(Locators.CATEGORY).click()
+        return category
+
+    def search_page_check_2(self):
+        category = self.search_in_category()
+        category_word = self.element_is_visible(Locators.CATEGORY_TITLE)
+        category_word = category_word.text
+        if category_word == category.upper():
+            print(f'PASS')
+            print(f'Слово категории {category}')
+            print(f'Слово тайтла {category_word}')
+        else:
+            print('FAIL')
+
+    def search_krakozyabra(self):
+
+        search_k = self.element_is_visible(Locators.INPUT_SEARCH)
+        search_k.send_keys(SVL.krakozyabra)
+        search_k.send_keys(Keys.RETURN)
+        time.sleep(5)
+
+    def search_page_check3(self):
+        search_word = self.element_is_present(Locators.KRAKOZYABRA_TITLE)
+        search_word = search_word.text
+        if search_word == SVL.krakozyabra:
+            print(f'PASS')
+            print(f'Слово поиска {SVL.krakozyabra}')
+            print(f'Слово тайтла {search_word}')
+        else:
+            print('FAIL')
+
