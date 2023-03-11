@@ -8,9 +8,20 @@ class TestSearch:
         search_page.open()
         search_page.search_product()
         search_page.search_page_check()
-        # print(search_page.search_page_check())
 
     def test_search_show_all(self, driver):
         search_page = Search(driver, 'https://eldorado.ua/uk/')
         search_page.open()
         search_page.search_show_all()
+        search_page.search_page_check()
+
+    def test_search_choose_product(self, driver):
+        search_page = Search(driver, 'https://eldorado.ua/uk/')
+        search_page.open()
+        search_page.search_choose_product()
+
+    def test_search_maybe_loock(self, driver):
+        search_page = Search(driver, 'https://eldorado.ua/uk/')
+        search_page.open()
+        search_page.search_maybe_loock()
+        search_page.search_page_check_1()
